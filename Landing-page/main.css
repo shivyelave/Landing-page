@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+  height: 87vh;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo{
+  position: relative;
+  max-width: 80px;
+}
+.navbar{
+  width: 80%;
+  height: 1vh;
+  margin-top: 4.5rem;
+  margin-left: 8rem;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: black;
+  border-radius: 30px;
+
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  padding-left: 50px;
+}
+
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  background: rgba(0,0,0,0);
+  margin: 0 20px;
+  position: sticky;
+  top: 0;
+}
+.navbar ul li a{
+  text-decoration: dashed;
+  color: white;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #fd1c03;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.container{
+  height: 85%;
+  width: 80%;
+  background-color: black;
+  margin: 3.5%;
+  margin-top: 4.5rem;
+  margin-left: 8rem;
+  box-shadow: -30px 30px 20px rgba(0,0,0,0.4) ;
+  
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  gap: 4rem;
+}
+.heading{
+  margin-top: 4rem;
+  color: aliceblue;
+  margin-left: 4rem;
+  text-align: center;
+  width: 450px;
+  margin-bottom: 2rem;
+  
+
+
+}
+.text{
+  text-align: center;
+  margin-left: 4rem;
+  color: aliceblue;
+  text-align: center;
+  height: 300px;
+  width: 400px;
+  
+
+  
+}
+.border{
+  border-left: solid 3px #fd1c03;
+  
+}
+.img{
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  
+  
+}
+.flex-img{
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  border-left: solid 3px #fd1c03;
+
+}
+.flex-img::-webkit-scrollbar{
+  width: 0px;
+}
+.flex::-webkit-scrollbar{
+  width: 0px;
+}
